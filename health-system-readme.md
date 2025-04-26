@@ -11,7 +11,7 @@ This is a simple Health Information System built using Flask. It allows doctors 
 
 1. **Clone the repository** (or download the project files):
    ```bash
-   git clone https://github.com/your-username/health-info-system.git
+   git clone (https://github.com/joehack1/health_program_management)
    cd health-info-system
    ```
 
@@ -37,7 +37,7 @@ This is a simple Health Information System built using Flask. It allows doctors 
 
 2. **Open your browser** and go to the following URL:
    ```
-   http://127.0.0.1:5000
+   http://127.0.0.1:5000/login
    ```
 
    * This will load the homepage of the application. If you're not logged in, you will be redirected to the **login page**.

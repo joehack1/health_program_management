@@ -1,4 +1,4 @@
-# Health Information System
+# Health Program management
 
 This is a simple Health Information System built using Flask. It allows doctors to manage health programs, clients, and enrollments.
 
@@ -12,7 +12,7 @@ This is a simple Health Information System built using Flask. It allows doctors 
 1. **Clone the repository** (or download the project files):
    ```bash
    git clone (https://github.com/joehack1/health_program_management)
-   cd health-info-system
+   cd health-program-management
    ```
 
 2. **Install the required Python packages**:

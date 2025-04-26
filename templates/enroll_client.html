@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+<div class="container mt-5">
+    <div class="card p-4">
+        <h2 class="text-center mb-4">Enroll Client into Program(s)</h2>
+        <form method="POST">
+            <label>Choose Client:</label>
+            <select name="client_id" class="form-control mb-3" required>
+                {% for client in clients %}
+                <option value="{{ client[0] }}">{{ client[1] }}</option>
+                {% endfor %}
+            </select>
+
+            <label>Choose Programs:</label>
+            {% for program in programs %}
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="program_ids[]" value="{{ program[0] }}">
+                <label class="form-check-label">{{ program[1] }}</label>
+            </div>
+            {% endfor %}
+
+            <button type="submit" class="btn btn-info w-100 mt-3">Enroll Client</button>
+        </form>
+    </div>
+    <div class="text-center mt-3">
+        <a href="{{ url_for('home') }}" class="btn btn-secondary">← Back to Home</a>
+    </div>
+</div>

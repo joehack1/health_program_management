@@ -1,0 +1,24 @@
+{% include 'header.html' %}
+<div class="container mt-5">
+    <div class="card p-4">
+        <h2 class="text-center mb-4">Search Clients</h2>
+        <form method="POST">
+            <input name="name" class="form-control mb-3" placeholder="Enter Client Name">
+            <button type="submit" class="btn btn-secondary w-100">Search</button>
+        </form>
+
+        {% if results %}
+            <h3 class="mt-4">Results:</h3>
+            <ul class="list-group">
+                {% for client in results %}
+                <li class="list-group-item">
+                    <a href="{{ url_for('client_profile', client_id=client[0]) }}">{{ client[1] }} (Age: {{ client[2] }})</a>
+                </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    <div class="text-center mt-3">
+        <a href="{{ url_for('home') }}" class="btn btn-secondary">← Back to Home</a>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+{% include 'header.html' %}
+<div class="container mt-5">
+    <div class="card p-4">
+        <h2 class="text-center mb-4">Client Profile</h2>
+        <p><strong>Name:</strong> {{ client[1] }}</p>
+        <p><strong>Age:</strong> {{ client[2] }}</p>
+        <p><strong>Gender:</strong> {{ client[3] }}</p>
+
+        <h4 class="mt-4">Enrolled Programs:</h4>
+        <ul class="list-group">
+            {% for program in programs %}
+            <li class="list-group-item">{{ program }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="text-center mt-3">
+        <a href="{{ url_for('home') }}" class="btn btn-secondary">← Back to Home</a>
+    </div>
+</div>

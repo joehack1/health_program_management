@@ -1,0 +1,13 @@
+{% include 'header.html' %}
+<div class="container mt-5">
+    <div class="card p-4">
+        <h2 class="text-center mb-4">Create a Health Program</h2>
+        <form method="POST">
+            <input name="name" class="form-control mb-3" placeholder="Program Name" required>
+            <button type="submit" class="btn btn-primary w-100">Create Program</button>
+        </form>
+    </div>
+    <div class="text-center mt-3">
+        <a href="{{ url_for('home') }}" class="btn btn-secondary">← Back to Home</a>
+    </div>
+</div>

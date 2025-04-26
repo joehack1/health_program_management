@@ -1,0 +1,19 @@
+{% include 'header.html' %}
+<div class="container mt-5">
+    <div class="card p-4">
+        <h2 class="text-center mb-4">Register New Client</h2>
+        <form method="POST">
+            <input name="name" class="form-control mb-3" placeholder="Client Name" required>
+            <input name="age" type="number" class="form-control mb-3" placeholder="Age" required>
+            <select name="gender" class="form-control mb-3" required>
+                <option disabled selected>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <button type="submit" class="btn btn-success w-100">Register Client</button>
+        </form>
+    </div>
+    <div class="text-center mt-3">
+        <a href="{{ url_for('home') }}" class="btn btn-secondary">← Back to Home</a>
+    </div>
+</div>

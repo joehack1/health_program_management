@@ -62,6 +62,24 @@ This is a simple Health Information System built using Flask. It allows doctors 
 
 * The app uses SQLite as the database.
 * The login credentials are stored in the SQLite database, and the default table is `doctors` with columns `id`, `username`, and `password`.
+## API Overview
+
+This application uses Flask to manage health programs, client registration, and enrollment.  
+The main routes (`endpoints`) are:
+
+- `/login` - Doctor login page.
+- `/logout` - Logout and end session.
+- `/program/create` - Create a new health program.
+- `/client/register` - Register a new client.
+- `/enroll` - Enroll a client into one or more programs.
+- `/client/search` - Search for registered clients.
+- `/client/<client_id>` - View a client's profile and enrolled programs.
+- `/register_doctor` - Register a new doctor account.
+
+All routes require login (session) except for `/login` and `/register_doctor`.
+
+The app uses **SQLite** as the database to store doctors, clients, programs, and enrollments.
+
 
 ## License
 

@@ -7,8 +7,8 @@ This is a simple Health Information System built using Flask. It allows doctors 
 - Python 3.x
 - pip (Python package installer)
 
-<img src="./a.png" alt="Screenshot A" width="400"/>
-<img src="./b.png" alt="Screenshot B" width="400"/>
+<img src="./a.PNG" alt="Screenshot A" width="400"/>
+<img src="./b.PNG" alt="Screenshot B" width="400"/>
 
 
 ## Installation
